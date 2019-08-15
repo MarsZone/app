@@ -1,14 +1,15 @@
 <template>
   <div id="app">
-    
+    <home></home>
   </div>
 </template>
 
 <script>
+import home from 'views/home/index'
 export default {
   name: 'app',
   components: {
-
+    home
   }
 }
 </script>
