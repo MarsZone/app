@@ -1,21 +1,18 @@
 <template>
-    <div>
-        <router-view></router-view>
-        <tabBar></tabBar>
-    </div>
+  <div>
+    <router-view></router-view>
+    <tabBar></tabBar>
+  </div>
 </template>
 <script>
-import homeView from './homeView'
-import tabBar from './components/tabBar'
+import tabBar from "./components/tabBar";
 export default {
-    name:'index',
-    components:{
-        homeView,
-        tabBar
-    }
-}
+  name: "index",
+  components: {
+    tabBar
+  }
+};
 </script>
 
 <style lang="less" scoped>
-
 </style>

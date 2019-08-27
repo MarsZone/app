@@ -1,17 +1,19 @@
 <template>
-  
+  <div>
+    <swiper></swiper>
+  </div>
 </template>
 
 <script>
-import swiper from './components/swiper'
+import swiper from "./components/swiper";
 export default {
-    name:'home',
-    components:{
-        swiper
-    }
-}
+  name: "home",
+  components: {
+    swiper
+  }
+};
 </script>
 
-<style>
+<style lang="less" scoped>
 
 </style>

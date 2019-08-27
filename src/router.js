@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from 'views/home/index'
+import home from 'views/home/homeView'
 Vue.use(Router)
 
 export default new Router({
@@ -10,6 +10,7 @@ export default new Router({
       path: '/',
       name: 'home',
       component:home
-    }
+    },
+    { path: '*', component: home }
   ]
 })
