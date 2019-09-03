@@ -1,6 +1,6 @@
 <template>
   <van-tabbar v-model="active">
-    <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+    <van-tabbar-item icon="home-o" @click="switchTabbar('home')">首页</van-tabbar-item>
     <van-tabbar-item icon="search">暂定</van-tabbar-item>
     <van-tabbar-item><span>地图</span>
     <img
@@ -9,7 +9,7 @@
       :src="props.active ? icon.active : icon.normal"
     >
     </van-tabbar-item>
-    <van-tabbar-item icon="user-o">我的</van-tabbar-item>
+    <van-tabbar-item icon="user-o" @click="switchTabbar('user')">我的</van-tabbar-item>
   </van-tabbar>
 </template>
 
@@ -27,6 +27,11 @@ export default {
         normal: 'assets/icons/home/map.svg',
         active: 'assets/icons/home/map-active.svg'
       }
+    }
+  },
+  methods:{
+    switchTabbar(tab){
+      this.$router.push(tab);
     }
   }
 };
