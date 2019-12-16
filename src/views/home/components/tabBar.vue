@@ -1,6 +1,6 @@
 <template>
   <van-tabbar v-model="active">
-    <van-tabbar-item icon="home-o" @click="switchTabbar('home')">首页</van-tabbar-item>
+    <van-tabbar-item icon="home-o" @click="switchTabbar('home')">{{ $t("index.tabbar.home") }}</van-tabbar-item>
     <van-tabbar-item icon="search">暂定</van-tabbar-item>
     <van-tabbar-item><span>地图</span>
     <img

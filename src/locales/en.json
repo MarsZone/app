@@ -1,7 +1,7 @@
 {
   "index": {
     "tabbar": {
-      "home": "主页"
+      "home": "Home"
     }
   },
   "message": "hello i18n !!"
